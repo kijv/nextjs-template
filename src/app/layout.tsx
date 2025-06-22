@@ -23,7 +23,7 @@ export default function RootLayout({
       lang="en"
       className="[--h-screen:100vh] supports-[height:1dh]:[--h-screen:100dvh] supports-[height:1svh]:[--h-screen:100svh]"
     >
-      <body className={cx(inter.variable, "antialiased min-h-(--h-screen) contents")}>
+      <body className={cx(inter.variable, "antialiased min-h-(--h-screen) flex flex-col")}>
         <main className="flex flex-col">{children}</main>
       </body>
     </html>
