@@ -21,7 +21,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cva": "^1.0.0-beta.4",
     "motion": "^12.18.1",
+    "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
