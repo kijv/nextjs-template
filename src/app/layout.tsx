@@ -21,10 +21,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="[--h-screen:100vh] supports-[height:1dh]:[--h-screen:100dvh] supports-[height:1svh]:[--h-screen:100svh]"
+      className="[--h-screen:100vh] supports-[height:1dvh]:[--h-screen:100dvh] supports-[height:1svh]:[--h-screen:100svh]"
     >
       <body className={cx(inter.variable, "antialiased min-h-(--h-screen) flex flex-col")}>
-        <main className="flex flex-col">{children}</main>
+        <main className="flex flex-col flex-1">{children}</main>
       </body>
     </html>
   );
