@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { cx } from "@/css/cva";
 import "@/css/globals.css";
-
-const inter = Inter({
-	subsets: ["latin"],
-	variable: "--font-inter",
-});
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -24,10 +17,7 @@ export default function RootLayout({
 			className="[--h-screen:100vh] supports-[height:1dvh]:[--h-screen:100dvh] supports-[height:1svh]:[--h-screen:100svh]"
 		>
 			<body
-				className={cx(
-					inter.variable,
-					"antialiased min-h-(--h-screen) flex flex-col",
-				)}
+				className="antialiased min-h-(--h-screen) flex flex-col"
 			>
 				<main className="flex flex-col flex-1 size-full">{children}</main>
 			</body>
