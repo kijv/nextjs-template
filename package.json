@@ -17,6 +17,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@aredotna/tokens": "^1.0.0",
     "@base-ui-components/react": "latest",
     "@tailwindcss/postcss": "latest",
     "@types/node": "^20",
