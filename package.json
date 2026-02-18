@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
   },
   "dependencies": {
     "next": "canary",
@@ -20,6 +23,11 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "cva": "beta",
+    "eslint": "^10.0.0",
+    "eslint-config-next": "^16.1.6",
+    "oxfmt": "latest",
+    "oxlint": "latest",
+    "oxlint-tsgolint": "latest",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4",
     "typescript": "^5"

@@ -1,0 +1,12 @@
+@theme {
+  --animate-skeleton: ease-in-out 500ms infinite alternate none running fade-in;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
