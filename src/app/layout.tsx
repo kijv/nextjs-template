@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ThemeProvider } from 'next-themes';
 import '@/css/globals.css';
 
 // const areal = localFont({
@@ -22,9 +23,18 @@ export default function RootLayout({
     <html
       lang="en"
       className="[--h-screen:100vh] supports-[height:1dvh]:[--h-screen:100dvh] supports-[height:1svh]:[--h-screen:100svh]"
+      suppressHydrationWarning={true}
     >
       <body className="antialiased min-h-(--h-screen) flex flex-col">
-        <div className="flex flex-col flex-1 size-full">{children}</div>
+        <ThemeProvider
+          disableTransitionOnChange={true}
+          enableColorScheme={true}
+          enableSystem={true}
+          attribute="class"
+          themes={['light', 'dark', 'dawn', 'dusk']}
+        >
+          <div className="flex flex-col flex-1 size-full">{children}</div>
+        </ThemeProvider>
       </body>
     </html>
   );
